@@ -1,0 +1,81 @@
+body {
+  background-color: #f2f2f2;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 64px;
+  border: none;
+  background-color: #ddd;
+  transition: background-color 0.3s;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cell-0 {
+  background-color: #fff;
+}
+
+#cell-1 {
+  background-color: rgb(255, 255, 255);
+}
+
+#cell-2 {
+  background-color: #fff;
+}
+
+#cell-3 {
+  background-color: rgb(255, 255, 255);
+}
+
+#cell-4 {
+  background-color: #fff;
+}
+
+#cell-5 {
+  background-color: rgb(255, 255, 255);
+}
+
+#cell-6 {
+  background-color: #fff;
+}
+
+#cell-7 {
+  background-color: rgb(255, 255, 255);
+}
+
+#cell-8 {
+  background-color: #fff;
+}
+
+td:hover {
+  background-color: #7fdbff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#reset-button {
+  margin: 20px auto;
+  display: block;
+  font-size: 20px;
+  padding: 10px 30px;
+  background-color: #7fdbff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+  background-color: #0074d9;
+}
