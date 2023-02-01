@@ -62,6 +62,14 @@ td:hover {
   transform: scale(1.05);
 }
 
+#result {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 #reset-button {
   margin: 20px auto;
   display: block;

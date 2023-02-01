@@ -23,10 +23,15 @@ for (let i = 0; i < cells.length; i++) {
       this.textContent = currentPlayer.symbol;
       this.style.color = currentPlayer.color;
       if (checkWin(currentPlayer.symbol)) {
-        alert(currentPlayer.name + ' wins!');
+        displayResult(currentPlayer.name + ' wins!');
         return;
       }
       switchPlayer();
+      if (checkTie()) {
+        alert('It\'s a tie!');
+        return;
+      }
+      
     }
   });
 }
@@ -99,8 +104,14 @@ const resetButton = document.querySelector('#reset-button');
 resetButton.addEventListener('click', function() {
   for (let i = 0; i < cells.length; i++) {
     cells[i].textContent = '';
+    displayResult('');
   }
 });
+
+function displayResult(message) {
+  const resultDisplay = document.querySelector('#result');
+  resultDisplay.textContent = message;
+}
 
 // Get player names
 const playerXName = prompt('Enter the name of player X:');
